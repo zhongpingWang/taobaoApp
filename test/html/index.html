@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible"content="IE=edge">
+<meta content="yes"name="apple-touch-fullscreen">
+<meta content="telephone=no"name="format-detection">
+<meta content="yes"name="apple-mobile-web-app-capable">
+<meta content="black"name="apple-mobile-web-app-black-bar-style">
+<meta name="viewport"content="width=device-width, initial-scale=1.0, minimum-scale=1.0 , maximum-scale=1.0, user-scalable=0">
+<title>首页</title>
+<style type="text/css">
+body, html {
+	height: 100%;
+	width: 100%;
+	max-width: 640px;
+}
+body, input, select, button, textarea {
+	font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+}
+.header {
+	text-align: center;
+	padding-top: 1.75rem;
+	margin-bottom: 1.35rem;
+}
+.header img {
+	height: 1.4rem;
+}
+.title {
+	color: #414244;
+	font-size: .8rem;
+	text-align: center;
+	margin-bottom: .55rem;
+}
+.articleContent {
+	padding: 0 .85rem;
+	font-size: .6rem;
+	color: #9D9D9D;
+	line-height: 0.8rem;
+	margin-bottom: 0.8rem;
+	max-height: 1.55rem;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	text-overflow: ellipsis;
+}
+@media screen and (max-width:375px) {
+	html, body {
+		font-size: 21px;
+	}
+	@media screen and (max-width:320px) {
+		html, body {
+			font-size: 20px;
+			padding: 0;
+			margin: 0;
+		}
+		*, *:before, *:after {
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+		h1, h2, h3, h4, h5, h6 {
+			font-weight: 400;
+		}
+		button, span, a, input, textarea {
+			-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+		}
+		input, button {
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			-webkit-border-image: none;
+			border-image: none;
+			-webkit-border-radius: 0;
+			border-radius: 0;
+		}
+		button, input, select, textarea {
+			outline: 0
+		}
+		:not(input, textarea) {
+			-webkit-touch-callout: none;
+			-webkit-user-select: none
+		}
+
+
+.share-user{position: relative;width: 100%;overflow: hidden;margin: 0px;padding: 0px;}
+
+.share-user>img{height:13.75rem;}
+
+.share-a-user{position: absolute;height: 11rem;width: 6.5rem;top: 1.375rem;left: .75rem;text-align: center;}
+
+.a-user-img{position: absolute;width: 3.75rem;height: 3.75rem;    top: 1.375rem;left: 50%;margin-left: -1.875rem;z-index: 10;border-radius: 50%;overflow: hidden;}
+
+.a-user-img>img{width:100%;height:100%;}
+.a-user-txt{    padding-top: 6rem;height: 100%;background: rgba(255, 255, 255, 0.8);position: relative;z-index: 5;border-radius: .1rem;}
+	
+.share-a-user h3 {
+    color: #3B4247;
+    font-size: 0.7rem;
+        margin: 0px;
+    padding: 0px;
+    margin-bottom: 0.2rem;
+}
+
+.a-user-experience {
+    display: inline-block;
+    padding: 0.05rem 0.2rem;
+    margin: 0 auto .4rem auto;
+    line-height: .825rem;
+    background: #0FD0B8;
+    color: #FFF;
+    font-size: 0.55rem;
+    overflow: hidden;
+    border-radius: 1px;
+}
+
+.share-happy-main p {
+    padding: 0 .85rem;
+    font-size: .6rem;
+    color: #9D9D9D;
+    line-height: 0.8rem;
+    margin-bottom: 0.8rem;
+    max-height: 1.55rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+}
+.share-a-user p {
+    color: #9D9D9D;
+    font-size: 0.5rem;
+}
+.share-happy-main address {
+    text-align: right;
+    padding: .5rem .7rem 0 0;
+    font-size: .55rem;
+    color: #9D9D9D;
+}
+.share-happy-main address {
+    text-align: right;
+    padding: .5rem .7rem 0 0;
+    font-size: .55rem;
+    color: #9D9D9D;
+}
+.swiper-next {
+    text-align: right;
+    padding: .5rem .7rem 0 0;
+    position: absolute;
+    bottom: 0.25rem;
+    right: 0;
+    z-index: 5;
+}
+.swiper-next > span {
+    -webkit-animation: next 1s linear 0s infinite;
+    animation: next 1s linear 0s infinite;
+    opacity: 0.5;
+    display: inline-block;
+    height: .6rem;
+    width: .6rem;
+    background:
+     url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAbCAYAAABvCO8sAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEPSURBVEhL1ZY9EoIwEIW5ELWdk02CpbWjF9DaQu/Cz3k4CJVUNLRxwyCjkWEXhaDMZGjy8u3LJpsNQKocpC6FiFYB80uSJMdxS9OUremWFqALBBoBqgKIJIeJsAJhBv9VHMeCo+nmrJUKrUMLxVFzoFmWhQgsW2i9CBTdbr50qrfUAq5ThJKalzXft9c/1ACo/RinbV4PlGbI6WLQExX1c05bp0dKQzkdDUUwqRmECqkvVNSuU4SeKc0c0OvvQ+0VaUtgUwY5EWMx2NkD9CiDHE0zxykK5sNc8rb1H2G8U+o6wxySd6rnSpCa3pz5hs1XwHu20RsM240Z30Ovj+8UjRS7p5kCNqpr896X+u6879dwAH99PesfAAAAAElFTkSuQmCC) 50% 50% no-repeat;
+    background-size: contain;
+}
+@keyframes next {
+  0% {
+    transform: translateX(0) translateZ(0);
+    opacity: 1; }
+  100% {
+    transform: translateX(12px) translateZ(0);
+    opacity: 0; } }
+
+
+		</style>
+		</head>
+		<body>
+
+
+		<header class="header">
+		<img src="../../s/image/share/share-author.png"alt="title"> 
+		</header>
+
+		<article class="share-happy-main">
+		<h3 class="title">一起懒在蓝色的枸杞岛</h3>
+		<p class="articleContent">同一个美景，在一百个旅者眼里，它有一百美景，在一百个旅者眼里，它有一百美景，在一百个旅者眼里，它有一百美景，在一百个旅者眼里，它有一百个模样。属于你的美景，只能靠自己走访。</p>
+
+
+		<figure class="share-user"> 
+
+			<img src="http://static.caibeike.com/i/d4bff22f5a71cf9eba80e3c351b8065c-6mJ0F4@!640c380"alt=""> 
+
+			<figcaption class="share-a-user">
+			 <div class="a-user-img"><img src="http://static.caibeike.com/i/0005a877fe9540cfea9b07336f5c3dbe-28fZdH@!s300"alt=""></div>
+
+				<div class="a-user-txt"> 
+				 	<h3>Melody</h3>
+				     <div class="a-user-experience">体验师</div> <p><span>42</span>个足迹, <span>18</span>种玩法</p> 
+				 </div> 
+			 </figcaption>
+		 </figure>
+
+<address> <span class="iconFont"></span>舟山·阡陌海景客栈·情侣出行 </address>
+		</article>
+
+
+<div class="swiper-next"><span></span></div>
+		</body>
+		</html>

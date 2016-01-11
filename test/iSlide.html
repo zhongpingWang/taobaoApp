@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-black-bar-style">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0 , maximum-scale=1.0, user-scalable=0">
+	<title>我的第一个手机项目</title>
+	<link rel="stylesheet" href="./css/first.css"  /> 
+
+	
+</head>
+<body id="control">
+	
+   
+ <!-- 加载 -->
+<div class="share-page">
+    <div class="share-animate">
+        <div class="share-logo"><div class="share-loading"></div></div>
+        <h1></h1>
+    </div>
+</div>
+<!-- 内容 -->
+<div class="iSlider-wrapper iSlider-wrapper-page" id="iSlider-wrapper-page">
+
+</div>
+
+<!-- 大图 -->
+<div class="iSlider-control">
+    <div class="iSlider-wrapper " id="iSlider-wrapper-fixed">
+
+    </div>
+    <div class="iSlide-title">路上有一条老汪 很可怜</div>
+</div>
+
+ <script src="../plugings/sea.js" type="text/javascript"></script>
+<script type="text/javascript">
+    seajs.use("./js/travel.js", function (share) {
+        share.init();
+    });
+</script>
+
+   
+
+</body>
+</html>
